@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1EA0137D-7F9D-459F-B226-B29DAA21902C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DOTween</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DG.Tweening.Core.Easing\Bounce.cs" />
+    <Compile Include="DG.Tweening.Core.Easing\EaseCurve.cs" />
+    <Compile Include="DG.Tweening.Core.Easing\EaseManager.cs" />
+    <Compile Include="DG.Tweening.Core.Easing\Flash.cs" />
+    <Compile Include="DG.Tweening.Core.Enums\FilterType.cs" />
+    <Compile Include="DG.Tweening.Core.Enums\OperationType.cs" />
+    <Compile Include="DG.Tweening.Core.Enums\SpecialStartupMode.cs" />
+    <Compile Include="DG.Tweening.Core.Enums\UpdateMode.cs" />
+    <Compile Include="DG.Tweening.Core.Enums\UpdateNotice.cs" />
+    <Compile Include="DG.Tweening.Core\ABSSequentiable.cs" />
+    <Compile Include="DG.Tweening.Core\Debugger.cs" />
+    <Compile Include="DG.Tweening.Core\DOGetter.cs" />
+    <Compile Include="DG.Tweening.Core\DOSetter.cs" />
+    <Compile Include="DG.Tweening.Core\DOTweenComponent.cs" />
+    <Compile Include="DG.Tweening.Core\DOTweenSettings.cs" />
+    <Compile Include="DG.Tweening.Core\Extensions.cs" />
+    <Compile Include="DG.Tweening.Core\SequenceCallback.cs" />
+    <Compile Include="DG.Tweening.Core\TweenerCore.cs" />
+    <Compile Include="DG.Tweening.Core\TweenManager.cs" />
+    <Compile Include="DG.Tweening.Core\Utils.cs" />
+    <Compile Include="DG.Tweening.CustomPlugins\PureQuaternionPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core.PathCore\ABSPathDecoder.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core.PathCore\CatmullRomDecoder.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core.PathCore\ControlPoint.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core.PathCore\LinearDecoder.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core.PathCore\Path.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\ABSTweenPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\IPlugSetter.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\ITPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\ITweenPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\PluginsManager.cs" />
+    <Compile Include="DG.Tweening.Plugins.Core\SpecialPluginsUtils.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\ColorOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\FloatOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\NoOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\OrientType.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\PathOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\QuaternionOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\RectOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\StringOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\UintOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\Vector3ArrayOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins.Options\VectorOptions.cs" />
+    <Compile Include="DG.Tweening.Plugins\Color2Plugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\ColorPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\DoublePlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\FloatPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\IntPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\LongPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\PathPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\QuaternionPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\RectOffsetPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\RectPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\StringPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\StringPluginExtensions.cs" />
+    <Compile Include="DG.Tweening.Plugins\UintPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\UlongPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\Vector2Plugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\Vector3ArrayPlugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\Vector3Plugin.cs" />
+    <Compile Include="DG.Tweening.Plugins\Vector4Plugin.cs" />
+    <Compile Include="DG.Tweening\AutoPlay.cs" />
+    <Compile Include="DG.Tweening\AxisConstraint.cs" />
+    <Compile Include="DG.Tweening\Color2.cs" />
+    <Compile Include="DG.Tweening\DOTween.cs" />
+    <Compile Include="DG.Tweening\DOVirtual.cs" />
+    <Compile Include="DG.Tweening\Ease.cs" />
+    <Compile Include="DG.Tweening\EaseFactory.cs" />
+    <Compile Include="DG.Tweening\EaseFunction.cs" />
+    <Compile Include="DG.Tweening\IDOTweenInit.cs" />
+    <Compile Include="DG.Tweening\LogBehaviour.cs" />
+    <Compile Include="DG.Tweening\LoopType.cs" />
+    <Compile Include="DG.Tweening\PathMode.cs" />
+    <Compile Include="DG.Tweening\PathType.cs" />
+    <Compile Include="DG.Tweening\RotateMode.cs" />
+    <Compile Include="DG.Tweening\ScrambleMode.cs" />
+    <Compile Include="DG.Tweening\Sequence.cs" />
+    <Compile Include="DG.Tweening\ShortcutExtensions.cs" />
+    <Compile Include="DG.Tweening\Tween.cs" />
+    <Compile Include="DG.Tweening\TweenCallback.cs" />
+    <Compile Include="DG.Tweening\Tweener.cs" />
+    <Compile Include="DG.Tweening\TweenExtensions.cs" />
+    <Compile Include="DG.Tweening\TweenParams.cs" />
+    <Compile Include="DG.Tweening\TweenSettingsExtensions.cs" />
+    <Compile Include="DG.Tweening\TweenType.cs" />
+    <Compile Include="DG.Tweening\UpdateType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
